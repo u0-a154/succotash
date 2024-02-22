@@ -1,6 +1,11 @@
-import time #Time untuk menjalankan waktu
-import os #OS untuk "clear"
-import sys #Untuk Fungsi Pada terminal
+import time
+import os
+import sys
+import requests
+import urllib
+import socket
+import random
+from time import sleep
 
 #inisialisasi warna
 
@@ -12,10 +17,9 @@ ungu    =   "\033[1;95m"
 merah   =   "\033[1;91m"
 biru    =   "\033[1;96m"
 
-def start(): #Start Untuk Menjalankan
+def start():
     os.system("clear")
-    print (f"""
-
+    print(f"""
 =====================================================================================================
 
 {kuning}>>>Spam-WhatsApp{biru}
@@ -122,7 +126,9 @@ def start(): #Start Untuk Menjalankan
 
 --> https://github.com/ferdiak/Nightmare-tools-ssh.v2.git
 
---> https://github.com/MHProDev/PyRoxy.git{putih}
+--> https://github.com/MHProDev/PyRoxy.git
+
+--> https://github.com/GALIRUS404/TOOLSv4 {merah}[ Pass: YbfmtmsuYybralowPOnhrnAhemtGALIRUSOfiicialw ]{putih}
 
 =====================================================================================================
 
@@ -188,7 +194,9 @@ def start(): #Start Untuk Menjalankan
 
 --> https://github.com/zerobyte-id-bak/Bashter {merah}[Untested]{biru}
 
---> https://github.com/moham3driahi/xattacker {merah}[+Auto-Exploiter]{putih}
+--> https://github.com/moham3driahi/xattacker {merah}[+Auto-Exploiter]
+
+--> https://github.com/wpscanteam/wpscan {merah}[Untested]{putih}
 
 =====================================================================================================
 
@@ -223,7 +231,11 @@ def start(): #Start Untuk Menjalankan
 
 >!>VIRUS-CREATOR
 
-#!> https://github.com/Hacker2425/Ransomware-Builder{putih}
+#!> https://github.com/Hacker2425/Ransomware-Builder
+
+>!>VIRUS
+
+#!> https://github.com/Projeckerror/Virus.git{putih}
 
 
 =====================================================================================================
@@ -264,7 +276,9 @@ def start(): #Start Untuk Menjalankan
 
 -> https://github.com/MrHacker-X/CrackerX.git/
 
--> https://github.com/Leo-Xd1/INSTA{ungu}
+-> https://github.com/Leo-Xd1/INSTA
+
+-> https://github.com/WeX-XD/dumpid.git{ungu}
 
 --#Phishing{abu}
 
@@ -336,7 +350,9 @@ def start(): #Start Untuk Menjalankan
 
 --#Dork{abu}
 
--> https://github.com/dr-iman/Wordpress-detector{ungu}
+-> https://github.com/dr-iman/Wordpress-detector
+
+-> https://github.com/ICWR-TEAM/BigDorker{ungu}
 
 --#Shell{abu}
 
@@ -380,7 +396,9 @@ def start(): #Start Untuk Menjalankan
 
 --#Vuln.Finder{abu}
 
--> https://github.com/ptonewreckin/cmsdetector{ungu}
+-> https://github.com/ptonewreckin/cmsdetector
+
+-> https://github.com/ultrasecurity/webkiller{ungu}
 
 --#CMS-Detector{abu}
 
@@ -479,6 +497,8 @@ def start(): #Start Untuk Menjalankan
 
 --> https://github.com/Tuhinshubhra/RED_HAWK
 
+--> https://github.com/LimerBoy/Impulse
+
 --> https://github.com/chaitin/xray/{putih}
 
 ====================================================================================================={kuning}
@@ -506,8 +526,8 @@ def start(): #Start Untuk Menjalankan
 ====================================================================================================={hijau}
 
                                Shout Out To These Script Creators!{kuning}
-                               (And So,  Follow Them If You Want.){biru}
-                            (The Names With {kuning}Yellow {biru}Color Is {ungu} Special){hijau}
+                               ({putih}And So,  Follow Them If You Want.,{kuning}){putih}
+                            ({biru}The Names With {kuning}Yellow {biru}Color Is {ungu} Special{putih}){hijau}
 
    {kuning}-FatihArridho    {hijau}-ShTasrif           -Mrforces           {kuning}-Cabbagec          {hijau}-AnonHackerr
    -ZynnBoy01       -kumpulanremaja     -jseidl             {kuning}-fahadsyihab06     {hijau}-iamunixtz
@@ -522,7 +542,7 @@ def start(): #Start Untuk Menjalankan
    -exploit-inters  -sidiqbrewstreet    -MrHacker-X         -thelinuxchoice    -DarkSecDevelopers
    -novalattasya    -V3n0m1997          -santatic           -WH1T3-E4GL3       -HyukIsBack
    -AhMyth          -teamcyber-glitch   -yingcrackerhades   -xPloits3c         -dr-iman
-   -iamhex          -indoxploit-coders  -derv82            {kuning}-Galirus404        {hijau}-surabayaxploit
+   -iamhex          -indoxploit-coders  -derv82             {kuning}-Galirus404        {hijau}-surabayaxploit
    -phpshellxyz     -AnonRoz-Team       -kyo1337            -ptonewreckin      -redhathackers
    -NinjaCR3        -Lucksi             -hoaan1995          -DensXyz           -nikmattullah-github
    -TheSpeedX       -SPIRAL-0           -Mudassarch1122     -BestProfessionals -mrking4044
@@ -548,5 +568,44 @@ def start(): #Start Untuk Menjalankan
 =====================================================================================================
 
 """)
+    sleep(1)
+    os.system('exit')
 
-start()
+def update():
+    os.system('clear')
+    print(f"""{ungu}Updating...{hijau}""")
+    sleep(2)
+    os.system('git clone https://github.com/u0-a154/succotash/blob/main/git.py; rm -rf git.py')
+    os.system('clear')
+    print(f"""{ungu}Updated!{putih}""")
+    sleep(2)
+    os.system('clear')
+    sleep(2)
+    os.system('git.py')
+
+def start1():
+    print(f"""{hijau}[1]Start
+{merah}[2]Update
+""")
+    b = input (f"{ungu}[•]Choose: {hijau}")
+
+    if b == "1":
+      sleep(1)
+      os.system('clear')
+      start()
+
+    elif b == "2":
+        sleep(2)
+        os.system('clear')
+        update()
+
+    else:
+        print(f" ""{merah}[!]Unknown Command!""")
+        sleep(2)
+        os.system('clear')
+        start1()
+
+try:
+    os.system('clear')
+finally:
+    start1()
