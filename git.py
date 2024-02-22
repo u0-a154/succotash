@@ -574,14 +574,15 @@ def start():
 def update():
     os.system('clear')
     print(f"""{ungu}Updating...{hijau}""")
+    os.system('rm -rf git.py')
     sleep(2)
-    os.system('git clone https://github.com/u0-a154/succotash/blob/main/git.py; rm -rf git.py')
+    os.system('git clone https://github.com/u0-a154/succotash/blob/main/git.py')
     os.system('clear')
     print(f"""{ungu}Updated!{putih}""")
     sleep(2)
     os.system('clear')
     sleep(2)
-    os.system('git.py')
+    os.system('python git.py')
 
 def start1():
     print(f"""{hijau}[1]Start
