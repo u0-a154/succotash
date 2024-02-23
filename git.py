@@ -573,15 +573,23 @@ def start():
 
 def update():
     os.system('clear')
-    print(f"""{ungu}Updating...{hijau}""")
+    print(f"""{hijau}[.]Updating...
+{merah}[DON'T CLOSE THE SYSTEM WHILE UPDATING]{hijau}""")
     os.system('rm -rf git.py')
     sleep(2)
-    os.system('git clone https://github.com/u0-a154/succotash/blob/main/git.py')
+    os.system('mkdir succoupdate')
+    sleep(1)
+    os.system('cd succoupdate')
+    sleep(1)
+    os.system('git clone https://github.com/u0-a154/succotash')
     os.system('clear')
-    print(f"""{ungu}Updated!{putih}""")
+    sleep(2)
+    print(f"""{hijau}[•]Updated!
+{merah}[DON'T CLOSE THE SYSTEM]{putih}""")
     sleep(2)
     os.system('clear')
     sleep(2)
+    os.system('cd succotash')
     os.system('python git.py')
 
 def start1():
